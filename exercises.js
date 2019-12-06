@@ -4,7 +4,7 @@
 * i.e. A function to generate a greeting to specific person you designate:*/
 
 // Step One: Define the function.
-function greeting(guest){ // takes in a parameter named 'guest' which acts like a local variable inside the function
+function greeting(guest) { // takes in a parameter named 'guest' which acts like a local variable inside the function
  return "Good afternoon " + guest + ".";  // the output value after the function is invoked
 }
 greeting("Mr. Smith"); // invoking or calling the function to execute the code (instructions) inside the function.
@@ -27,6 +27,8 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
+var bango1 = 1
+var bango2 = 2
 
 /*
  * #2
@@ -43,8 +45,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
+function add(num1,num2) {
+return num1 + num2;
+}
 
+var sum = add(bango1,bango2);
 
+console.log(sum);
 
 /*
  * #3
@@ -60,10 +67,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
+function subtract(num1,num2){
+return num1 - num2;
+}
 
+var difference = subtract(bango1,bango2);
 
-
-
+console.log(difference);
 
 /*
  * #4
@@ -79,8 +89,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
+function multiply(num1,num2){
+return num1 * num2;
+}
 
+var product = multiply(bango1,bango2);
 
+console.log(product);
 
 /*
  * #5
@@ -96,7 +111,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
+function divide(num1,num2){
+return num1 / num2;
+}
 
+var quotient = divide(bango1,bango2);
+
+console.log(quotient);
 
 /*
  * #6
@@ -110,9 +131,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+function checkSum(x){
+return `Mariah Carey has been married ${x} amount of times`;
+}
 
+var a = checkSum(sum);
 
-
+console.log(a);
 
 /*
  * #7
@@ -127,7 +152,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
+function checkDifference(x){
+return `Last night I dreamt that I ate ${x} Taco Bell soft tacos`;
+}
 
+var b = checkDifference(difference);
+
+console.log(b);
 
 /*
  * #8
@@ -140,6 +171,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
+function checkProduct(){
+return sum * product;  
+}
+
+console.log(checkProduct());
 
 /*
  * #9
@@ -152,7 +188,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
+function checkQuotient(){
+return product * quotient;
+}
 
+console.log(checkQuotient())
 
 /*
  * #10
@@ -192,7 +232,7 @@ console.log(testGreeting); // printing the output value of the function.
 */ 
 
 
-}
+
 
 
 /*
